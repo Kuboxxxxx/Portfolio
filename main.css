@@ -1,0 +1,230 @@
+/*main formating*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Dosis', sans-serif;
+    background-color: #dfdfdf;
+}
+
+img{
+    width: 100%;
+}
+
+/*hero styles*/
+
+.top--icons{
+    float: right;
+    font-size: 2rem;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-shadow: none;
+}
+
+.hero{
+    background-image: url(./img/mobile-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 840px;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: -1px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.hero a{
+    display: inline-block;
+    background-color: #21db3a;
+    font-size: 2.6rem;
+    border: none;
+    border-radius: 2em;
+    padding: 10px;
+    margin-top: 5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*about me styles*/
+
+.aboutme{
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+
+h2{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.aboutme p{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+/*portfolio styles*/
+
+h3{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.portfolio p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.portfolio span{
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.project ul li{
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
+
+.portfolio a, .portfolio a:visited {
+    text-decoration: none;
+    color: #af44bb;
+    font-weight: bold;
+}
+
+/*contact styles*/
+
+.contact{
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.fix--width{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h4{
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.contact p{
+    padding: 2rem 0;
+}
+
+h5{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+label{
+    display: block;
+    padding: 0.5rem 0;
+}
+
+input{
+    border: none;
+    border-radius: 5rem;
+    width: 75%;
+}
+
+textarea{
+    display: block;
+    width: 75%;
+    border: none;
+    border-radius: 1rem;
+    resize: none;
+}
+
+#sub{
+    background-color: #21db3a;
+    margin-top: 1rem;
+}
+
+/*footer styles*/
+
+footer{
+    padding: 2rem 0;
+    background-color: #7f7f7f;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/*responsive to desktop*/
+
+@media (min-width: 1281px) {
+
+/*hero styles*/
+
+.hero{
+    background-image: url(./img/bg.jpg);
+}
+
+/*porftolio styles*/
+
+.container{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.project{
+    width: 30%;
+}
+
+/*contact styles*/
+
+.contact input{
+    height: 3rem;
+}
+
+}
+
+/*responive to tablets in portrait*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/*responsive to tablets in landscape*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/*phones in landscape*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
