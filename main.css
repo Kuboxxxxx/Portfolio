@@ -148,6 +148,7 @@ h4{
 
 .contact p{
     padding: 2rem 0;
+    font-size: 1.15rem;
 }
 
 h5{
@@ -215,12 +216,11 @@ footer{
 }
 
 .container{
-    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 .project{
-    width: 30%;
+    width: 45%;
 }
 
 /*contact styles*/
