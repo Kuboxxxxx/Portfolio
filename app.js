@@ -13,7 +13,7 @@ const darkModeToggle = () => {
     }
 }
 
-if (darkModeValue.status){
+if (darkModeValue){
     document.body.classList.add('dark')
 }
 
