@@ -1,5 +1,7 @@
 // Dark mode
 
+localStorage.setItem("darkMode", JSON.stringify({ status: false }))
+
 const darkModeToggleButton = document.querySelector('#darkModeToggleButton')
 const darkModeValue = JSON.parse(localStorage.getItem("darkMode"))
 
@@ -13,7 +15,7 @@ const darkModeToggle = () => {
     }
 }
 
-if (darkModeValue){
+if (darkModeValue.status){
     document.body.classList.add('dark')
 }
 
