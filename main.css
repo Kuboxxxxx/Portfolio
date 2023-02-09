@@ -6,11 +6,29 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Medium.otf);
+}
+
+:root{
+    --bgColor: #fff;
+    --onBg: #000;
+    --primary: #6E07F3;
+}
+
+.dark {
+    --bgColor: #000;
+    --onBg: #fff;
+}
+
+.primary{
+    background-color: #6E07F3;
+}
+
 body{
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Dosis', sans-serif;
-    background-color: #dfdfdf;
+    font-family: Gilroy;
+    background-color: var(--bgColor);
 }
 
 img{
@@ -28,26 +46,29 @@ img{
 }
 
 .icon--button{
-    color: #fff;
+    color: var(--onBg);
 }
 
 .hero{
-    background-image: url(./img/mobile-hero.jpg);
+    /* background-image: url(./img/mobile-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--onBg);
     text-align: center;
     margin-bottom: -1px;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 3.8rem;
     text-align: center;
     padding-top: 10rem;
     padding-bottom: 5rem;
+}
+
+.hero p{
+    font-size: 1.5rem;
 }
 
 .contact--me{
@@ -63,17 +84,29 @@ h1{
     margin-bottom: 5rem;
 }
 
+.avatar {
+    border-radius: 999px;
+    margin-top: 50px;
+    width: 60%;
+}
+
 /*about me styles*/
 
 .aboutme{
-    background-color: #000;
     text-align: center;
     color: #fff;
 }
 
+.mylife {
+    background-color: var(--primary);
+    padding-bottom: 30rem;
+    padding-top: 5rem;
+    margin-bottom: -27rem;
+}
+
 h2{
-    font-size: 3rem;
-    padding-bottom: 1rem;
+    font-size: 2rem;
+    padding: 2rem 0;
 }
 
 .aboutme p{
@@ -83,12 +116,61 @@ h2{
     padding-bottom: 2rem;
 }
 
+.skills{
+    border-radius: 12px;
+    background-color: var(--bgColor);
+    color: var(--onBg);
+    box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+    width: 90%;
+    margin: auto;
+}
+
+.skill--content{
+    border-bottom: solid 2px #e6ecf8;
+    padding-top: 20px;
+}
+
+.last--skill{
+    border: none;
+}
+
+.skill--content h3 {
+    color: var(--primary);
+    font-size: 24px;
+}
+
+.icon--div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5BE9B9;
+    width: 64px;
+    height: 64px;
+    margin: auto;
+    border-radius: 999px;
+}
+
+.icon--skill {
+    font-size: 2.3rem;
+}
 /*portfolio styles*/
 
-h3{
+.portfolio h3{
     font-size: 3rem;
     text-align: center;
     padding-bottom: 30px;
+    margin-top: 20px;
+    color: var(--onBg);
+}
+
+.portfolio{
+    color: #fff;
+}
+
+.portfolio h4{
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center;
 }
 
 .portfolio p{
@@ -107,9 +189,12 @@ h3{
 }
 
 .project{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    padding: 1.6rem;
     margin-bottom: 4rem;
+    background-color: var(--primary);
+    border-radius: 18px;
 }
 
 .project ul li{
@@ -131,13 +216,13 @@ h3{
 
 .contact{
     margin: 0 auto;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--bgColor); 
+    color: var(--onBg);
     padding-bottom: 2rem;
 }
 
 .fix--width{
-    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -162,8 +247,9 @@ label{
 }
 
 input{
-    border: none;
+    border: solid;
     border-radius: 5rem;
+    border-color: var(--primary);
     width: 75%;
     padding: 5px;
 }
@@ -171,22 +257,32 @@ input{
 textarea{
     display: block;
     width: 75%;
-    border: none;
+    border: solid;
+    border-color: var(--primary);
     border-radius: 1rem;
     resize: none;
     padding: 5px;
 }
 
 #sub{
-    background-color: #21db3a;
+    background-color: transparent;
     margin-top: 1rem;
+    border: solid;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+#sub:hover{
+    background-color: var(--primary);
+    color: #fff;
+    transition: ease-in-out 0.3s;
 }
 
 /*footer styles*/
 
 footer{
     padding: 2rem 0;
-    background-color: #7f7f7f;
+    background-color: var(--primary);
     color: #fff;
     text-align: center;
     font-size: 1.2rem;
@@ -199,14 +295,37 @@ footer{
 /*hero styles*/
 
 .hero{
-    background-image: url(./img/bg.jpg);
+    /* background-image: url(./img/bg.jpg); */
     height: 750px;
+}
+
+.avatar {
+    width: 15%;
 }
 
 /*aboutme styles*/
 
 .aboutme{
     padding-top: 1.5rem;
+}
+
+.mylife p{
+    max-width: 1200px;
+}
+
+.skills {
+    display: flex;
+    max-width: 1200px;
+}
+
+.skill--content {
+    width: 50%;
+    border-right: solid 2px #e6ecf8;
+    border-bottom: none;
+}
+
+.last--skill{
+    border: none;
 }
 
 /*porftolio styles*/
@@ -217,6 +336,8 @@ footer{
 
 .container{
     justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .project{
