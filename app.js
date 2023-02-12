@@ -26,31 +26,31 @@ if (darkModeValue.status){
 
 darkModeToggleButton.addEventListener("click", darkModeToggle)
 
-//Clickable projects
+// //Clickable projects
 
-const bambooProject = document.querySelector("#bambooLink")
-const restoProject = document.querySelector("#restoLink")
-const mafiaProject = document.querySelector("#mafiaLink")
-const wtrProject = document.querySelector("#wtrLink")
+// const bambooProject = document.querySelector("#bambooLink")
+// const restoProject = document.querySelector("#restoLink")
+// const mafiaProject = document.querySelector("#mafiaLink")
+// const wtrProject = document.querySelector("#wtrLink")
 
-const bambooLink = "https://kuboxxxxx.github.io/ClickerGame/"
-const restoLink = "https://github.com/Kuboxxxxx/Resto"
-const mafiaLink = "https://pusheeneiro.itch.io/black-market"
-const wtrLink = "https://pusheeneiro.itch.io/wtr"
+// const bambooLink = "https://kuboxxxxx.github.io/ClickerGame/"
+// const restoLink = "https://github.com/Kuboxxxxx/Resto"
+// const mafiaLink = "https://pusheeneiro.itch.io/black-market"
+// const wtrLink = "https://pusheeneiro.itch.io/wtr"
 
-const openWindow = (link) => {
-    window.open(link)
-}
+// const openWindow = (link) => {
+//     window.open(link)
+// }
 
-bambooProject.addEventListener("click", function(){
-    window.open(bambooLink)
-})
-restoProject.addEventListener("click", function(){
-    openWindow(restoLink)
-})
-mafiaProject.addEventListener("click", function(){
-    openWindow(mafiaLink)
-})
-wtrProject.addEventListener("click", function(){
-    openWindow(wtrLink)
-})
+// bambooProject.addEventListener("click", function(){
+//     window.open(bambooLink)
+// })
+// restoProject.addEventListener("click", function(){
+//     openWindow(restoLink)
+// })
+// mafiaProject.addEventListener("click", function(){
+//     openWindow(mafiaLink)
+// })
+// wtrProject.addEventListener("click", function(){
+//     openWindow(wtrLink)
+// })

@@ -226,11 +226,15 @@ h2{
 
 .portfolio a, .portfolio a:visited {
     text-decoration: none;
-    color: #af44bb;
+    color: #fff;
     font-weight: bold;
     font-size: 1.6rem;
     display: block;
     padding-bottom: 1rem;
+}
+
+.portfolio a:hover{
+    color: #000;
 }
 
 /*contact styles*/
@@ -295,7 +299,7 @@ textarea{
 
 .link a {
     text-decoration: none;
-    color: #000;
+    color: var(--onBg);
 }
 
 .link a:hover{
